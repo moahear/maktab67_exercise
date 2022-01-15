@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/containerLayoutToast"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="10dp"
+    app:neumorph_shadowColorDark="@color/neumorphismShadowColorDark"
+    app:neumorph_shadowColorLight="@color/neumorphismShadowColorLight"
+    app:neumorph_shadowElevation="6dp"
+
+    android:paddingVertical="5dp"
+    android:backgroundTint="@color/neumorphismMainColor"
+    app:neumorph_backgroundColor="@color/neumorphismMainColor"
+    android:background="@drawable/toast_general_background">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <soup.neumorphism.NeumorphImageView
+            android:contentDescription="toast image"
+            android:id="@+id/toasImage"
+            app:neumorph_shadowElevation="6dp"
+            app:neumorph_shadowColorDark="@color/neumorphismShadowColorDark"
+            app:neumorph_shadowColorLight="@color/neumorphismShadowColorLight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_general_toast_image" />
+
+        <TextView
+            android:id="@+id/tostText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginEnd="16dp"
+            android:padding="5dp"
+            android:text="hello word"
+            android:textColor="#FFF8F8"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/toasImage"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</soup.neumorphism.NeumorphCardView>
