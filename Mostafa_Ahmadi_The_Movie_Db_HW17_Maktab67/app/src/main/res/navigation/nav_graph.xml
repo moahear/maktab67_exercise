@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/showMovieFragment">
+
+    <fragment
+        android:id="@+id/showMovieFragment"
+        android:name="com.example.mostafa_ahmadi_the_movie_db_hw17_maktab67.ShowMovieFragment"
+        android:label="fragment_show_movie"
+        tools:layout="@layout/fragment_show_movie" />
+    <fragment
+        android:id="@+id/moviePlayerFragment"
+        android:name="com.example.mostafa_ahmadi_the_movie_db_hw17_maktab67.MoviePlayerFragment"
+        android:label="MoviePlayerFragment"
+        tools:layout="@layout/fragment_movie_player"/>
+</navigation>
